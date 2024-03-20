@@ -371,7 +371,14 @@ class URLParser:
     def get_all_components_keys(self):
         return list(self.components.keys())
 
-
+if __name__ == "__main__":
+    url = "https://www.google.com/search?q=python+url+parser+example"
+    parser = URLParser(url)
+    print("URL:", url)
+    # print("Components:", parser.get_all_components())
+    print("Components Values:", parser.get_all_components_values())
+    # print("Components Keys:", parser.get_all_components_keys())
+    print("Components Length:", len(parser.get_all_components_values()))
 # url = "https://www.google.com/search?q=python+url+parser+example"
 # parser = URLParser(url)
 # print("URL:", url)
