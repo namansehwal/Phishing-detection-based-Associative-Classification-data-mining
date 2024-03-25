@@ -219,7 +219,7 @@ class URLParser:
             "qty_percent_directory": self.directory.count("%"),
             "directory_length": len(self.directory),
         }
-        return directory_components
+        return directory_components if self.directory else {key: -1 for key in directory_components}
 
     def get_file_components(self):
         file_components = {
@@ -242,7 +242,7 @@ class URLParser:
             "qty_percent_file": self.file.count("%"),
             "file_length": len(self.file),
         }
-        return file_components
+        return file_components if self.file else {key: -1 for key in file_components}
 
     def get_parameters_components(self):
         parameters_components = {
@@ -273,7 +273,7 @@ class URLParser:
             ),
             "qty_params": len(self.parameters.split("&")),
         }
-        return parameters_components
+        return parameters_components if self.parameters else {key: -1 for key in parameters_components}
 
     def get_resolving_components(self):
         try:
@@ -372,10 +372,11 @@ class URLParser:
         return list(self.components.keys())
 
 if __name__ == "__main__":
+    import json
     url = "https://www.google.com/search?q=python+url+parser+example"
     parser = URLParser(url)
     print("URL:", url)
-    # print("Components:", parser.get_all_components())
+    print("Components:", json.dump(parser.get_all_components(),))
     print("Components Values:", parser.get_all_components_values())
     # print("Components Keys:", parser.get_all_components_keys())
     print("Components Length:", len(parser.get_all_components_values()))
