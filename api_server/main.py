@@ -155,7 +155,7 @@ def predict():
             "message": (
                 "Prediction says it's a phishing URL"
                 if output == 1
-                else "Prediction says it's a benign URL"
+                else "Prediction says it's a safe browsing URL"
             ),
         }
     )

@@ -146,6 +146,7 @@ import datetime
 import requests
 import socket
 import ssl
+from . import toolkit
 
 
 class URLParser:
@@ -219,7 +220,11 @@ class URLParser:
             "qty_percent_directory": self.directory.count("%"),
             "directory_length": len(self.directory),
         }
-        return directory_components if self.directory else {key: -1 for key in directory_components}
+        return (
+            directory_components
+            if self.directory
+            else {key: -1 for key in directory_components}
+        )
 
     def get_file_components(self):
         file_components = {
@@ -273,65 +278,41 @@ class URLParser:
             ),
             "qty_params": len(self.parameters.split("&")),
         }
-        return parameters_components if self.parameters else {key: -1 for key in parameters_components}
+        return (
+            parameters_components
+            if self.parameters
+            else {key: -1 for key in parameters_components}
+        )
 
     def get_resolving_components(self):
-        try:
-            ip = socket.gethostbyname(self.domain)
-            domain = whois.whois(self.domain)
-            resolving_components = {
-                "time_response": domain.creation_date - domain.updated_date,
-                "domain_spf": 1 if "spf" in domain.text.lower() else 0,
-                "asn_ip": ip,
-                "time_domain_activation": (
-                    datetime.datetime.now() - domain.creation_date
-                ).days,
-                "time_domain_expiration": (
-                    domain.expiration_date - datetime.datetime.now()
-                ).days,
-                "qty_ip_resolved": len(socket.gethostbyname_ex(self.domain)),
-                "qty_nameservers": len(domain.name_servers),
-                "qty_mx_servers": len(domain.get_mx()),
-                "ttl_hostname": socket.gethostbyname_ex(self.domain)[-1],
-                "tls_ssl_certificate": (
-                    1 if ssl.get_server_certificate((self.domain, 443)) else 0
-                ),
-                "qty_redirects": len(requests.get(self.url).history),
-                "url_google_index": (
-                    1
-                    if requests.get(f"https://www.google.com/search?q={self.url}").text
-                    else 0
-                ),
-                "domain_google_index": (
-                    1
-                    if requests.get(
-                        f"https://www.google.com/search?q={self.domain}"
-                    ).text
-                    else 0
-                ),
-                "url_shortened": 1 if len(self.url) < 20 else 0,
-            }
-            return resolving_components
-        except:
-            return {
-                key: 0
-                for key in [
-                    "time_response",
-                    "domain_spf",
-                    "asn_ip",
-                    "time_domain_activation",
-                    "time_domain_expiration",
-                    "qty_ip_resolved",
-                    "qty_nameservers",
-                    "qty_mx_servers",
-                    "ttl_hostname",
-                    "tls_ssl_certificate",
-                    "qty_redirects",
-                    "url_google_index",
-                    "domain_google_index",
-                    "url_shortened",
-                ]
-            }
+
+        ip = socket.gethostbyname(self.domain)
+        domain = whois.whois(self.domain)
+        resolving_components = {
+            "time_response": toolkit.time_response(self.url),
+            "domain_spf": toolkit.domain_spf(self.domain),
+            "asn_ip": ip[0],
+            "time_domain_activation": (
+                datetime.datetime.now() - domain.creation_date[0]
+            ).days,
+            "time_domain_expiration": (
+                domain.expiration_date[0] - datetime.datetime.now()
+            ).days,
+            "qty_ip_resolved": toolkit.qty_ip_resolved(self.domain),
+            "qty_nameservers": toolkit.qty_nameservers(self.domain),
+            "qty_mx_servers": toolkit.qty_mx_servers(self.domain),
+            "ttl_hostname": str(socket.gethostbyname_ex(self.domain)[-1])[2],
+            "tls_ssl_certificate": (
+                1 if toolkit.tls_ssl_certificate(self.domain) else 0
+            ),
+            "qty_redirects": len(requests.get(self.url).history),
+            "url_google_index": (1 if toolkit.is_url_indexed(self.url) else 0),
+            "domain_google_index": (1 if toolkit.is_domain_indexed(self.domain) else 0),
+            "url_shortened": 1 if toolkit.is_shortened_url(self.url) else 0,
+        }
+        for key, value in resolving_components.items():
+            print(key, value)
+        return resolving_components
 
     def get_external_services_components(self):
         return {}
@@ -371,19 +352,20 @@ class URLParser:
     def get_all_components_keys(self):
         return list(self.components.keys())
 
+
 if __name__ == "__main__":
     import json
+
     url = "https://www.google.com/search?q=python+url+parser+example"
     parser = URLParser(url)
     print("URL:", url)
-    print("Components:", json.dump(parser.get_all_components(),))
     print("Components Values:", parser.get_all_components_values())
     # print("Components Keys:", parser.get_all_components_keys())
     print("Components Length:", len(parser.get_all_components_values()))
-# url = "https://www.google.com/search?q=python+url+parser+example"
-# parser = URLParser(url)
-# print("URL:", url)
-# print("Components:", parser.get_all_components())
+url = "https://www.google.com/search?q=python+url+parser+example"
+parser = URLParser(url)
+print("URL:", url)
+print("Components:", parser.get_all_components())
 # print("Components Values:", parser.get_all_components_values())
 # print("Components Keys:", parser.get_all_components_keys())
 # print("Components Length:", len(parser.get_all_components_values()))
