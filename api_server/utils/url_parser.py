@@ -292,12 +292,8 @@ class URLParser:
             "time_response": toolkit.time_response(self.url),
             "domain_spf": toolkit.domain_spf(self.domain),
             "asn_ip": ip[0],
-            "time_domain_activation": (
-                datetime.datetime.now() - domain.creation_date[0]
-            ).days,
-            "time_domain_expiration": (
-                domain.expiration_date[0] - datetime.datetime.now()
-            ).days,
+            "time_domain_activation": toolkit.time_domain_activation(self.domain),
+            "time_domain_expiration": toolkit.time_domain_expiration(self.domain),
             "qty_ip_resolved": toolkit.qty_ip_resolved(self.domain),
             "qty_nameservers": toolkit.qty_nameservers(self.domain),
             "qty_mx_servers": toolkit.qty_mx_servers(self.domain),

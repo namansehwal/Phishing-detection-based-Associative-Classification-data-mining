@@ -4,6 +4,8 @@ import requests
 import dns.resolver
 import socket
 import ssl
+import whois
+import datetime
 
 
 def time_response(url):
@@ -131,3 +133,29 @@ def is_url_indexed(url):
     except Exception as e:
         print(f"An error occurred: {e}")
         return False
+
+
+def time_domain_activation(domain):
+    try:
+        domain_info = whois.whois(domain)
+        if isinstance(domain_info.creation_date, list):
+            creation_date = domain_info.creation_date[0]
+        else:
+            creation_date = domain_info.creation_date
+        return (datetime.datetime.now() - creation_date).days
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return 0
+
+
+def time_domain_expiration(domain):
+    try:
+        domain_info = whois.whois(domain)
+        if isinstance(domain_info.expiration_date, list):
+            expiration_date = domain_info.expiration_date[0]
+        else:
+            expiration_date = domain_info.expiration_date
+        return (expiration_date - datetime.datetime.now()).days
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return 0
