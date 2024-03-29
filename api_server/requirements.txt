@@ -2,7 +2,7 @@ flask
 joblib
 numpy
 cassandra-driver
-whois
+python-whois
 bs4
 requests
 dnspython

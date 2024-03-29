@@ -9,11 +9,9 @@ from connect_database import add_entry, fetch_all_entries
 
 from utils.url_parser import URLParser
 
-# warnings.filterwarnings("ignore", message="X does not have valid feature names")
+import threading
 
 app = Flask(__name__)
-
-# add "models/trained_models/phishing_model.pkl" to the path
 
 
 model_path = os.path.join(
@@ -30,23 +28,28 @@ def predict():
     url = data["url"]
 
     parser = URLParser(url)
-    
+
     prediction = model.predict(parser.np_array())
 
     output = prediction[0].item()  # Convert numpy integer to Python integer
     # Add an entry
     result = "safe" if output == 0 else "phishing"
-    add_entry(ip_address, datetime.datetime.now(), url, result)
-
-    # Fetch all entries
-    all_entries = fetch_all_entries()
-    for entry in all_entries:
-        print(entry)
+    print(parser.np_array())
+    store_thread = threading.Thread(
+        target=add_entry,
+        args=(
+            ip_address,
+            datetime.datetime.now(),
+            url,
+            result + str(parser.np_array()),
+        ),
+    )
+    store_thread.start()
 
     return jsonify(
         {
             "prediction": output,
-            "url": "url",
+            "url": url,
             "message": (
                 "Prediction says it's a phishing URL"
                 if output == 1
@@ -54,6 +57,15 @@ def predict():
             ),
         }
     )
+
+
+@app.route("/fetch", methods=["GET"])
+def fetch():
+    all_entries = fetch_all_entries()
+    for entry in all_entries:
+        print(entry)
+
+    return jsonify(all_entries)
 
 
 if __name__ == "__main__":
