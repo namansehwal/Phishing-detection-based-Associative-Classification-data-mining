@@ -287,11 +287,10 @@ class URLParser:
     def get_resolving_components(self):
 
         ip = socket.gethostbyname(self.domain)
-        domain = whois.whois(self.domain)
         resolving_components = {
             "time_response": toolkit.time_response(self.url),
             "domain_spf": toolkit.domain_spf(self.domain),
-            "asn_ip": ip[0],
+            "asn_ip": 1,
             "time_domain_activation": toolkit.time_domain_activation(self.domain),
             "time_domain_expiration": toolkit.time_domain_expiration(self.domain),
             "qty_ip_resolved": toolkit.qty_ip_resolved(self.domain),
@@ -308,6 +307,8 @@ class URLParser:
         }
         for key, value in resolving_components.items():
             print(key, value)
+        print("Domain:", self.domain)
+        print("URL:", self.url)
         return resolving_components
 
     def get_external_services_components(self):
@@ -349,19 +350,10 @@ class URLParser:
         return list(self.components.keys())
 
 
-if __name__ == "__main__":
-    import json
-
-    url = "https://www.google.com/search?q=python+url+parser+example"
-    parser = URLParser(url)
-    print("URL:", url)
-    print("Components Values:", parser.get_all_components_values())
-    # print("Components Keys:", parser.get_all_components_keys())
-    print("Components Length:", len(parser.get_all_components_values()))
-url = "https://www.google.com/search?q=python+url+parser+example"
-parser = URLParser(url)
-print("URL:", url)
-print("Components:", parser.get_all_components())
+# url = "https://www.google.com/search?q=python+url+parser+example"
+# parser = URLParser(url)
+# print("URL:", url)
+# print("Components:", parser.get_all_components())
 # print("Components Values:", parser.get_all_components_values())
 # print("Components Keys:", parser.get_all_components_keys())
 # print("Components Length:", len(parser.get_all_components_values()))

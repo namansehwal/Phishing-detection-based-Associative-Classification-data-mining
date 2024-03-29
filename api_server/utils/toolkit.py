@@ -7,7 +7,20 @@ import ssl
 import whois
 import datetime
 
-
+def get_asn_for_url(url):
+    try:
+        # Resolve the URL to an IP address
+        ip_address = socket.gethostbyname(url)
+        # Perform WHOIS query to get ASN information
+        obj = IPWhois(ip_address)
+        result = obj.lookup_rdap()
+        asn = result['asn']
+        return asn
+    except Exception as e:
+        print(f"Error getting ASN for {url}: {e}")
+        return None
+    
+    
 def time_response(url):
     try:
         response = requests.get(url)
