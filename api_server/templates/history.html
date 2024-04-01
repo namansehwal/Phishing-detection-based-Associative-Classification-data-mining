@@ -35,19 +35,22 @@
       <table id="phishingTable" class="ui celled table" style="width: 100%">
         <thead>
           <tr>
-            <th>IP</th>
-            <th>Prediction</th>
-            <th>Time</th>
             <th>URL</th>
+            <th>IP</th>
+
+            <th>Time</th>
+            <th>Prediction</th>
           </tr>
         </thead>
         <tbody>
           {% for val in history %}
           <tr>
-            <td>{{ val.ip }}</td>
-            <td>{{ val.pred }}</td>
-            <td>{{ val.time }}</td>
             <td>{{ val.url }}</td>
+            <td>{{ val.ip }}</td>
+
+            <td>{{ val.time }}</td>
+
+            <td>{{ val.pred }}</td>
           </tr>
           {% endfor %}
         </tbody>
