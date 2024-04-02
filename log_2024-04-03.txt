@@ -1,0 +1,16 @@
+2024-04-03 02:37:15,597 - WARNING -  * Debugger is active!
+2024-04-03 02:37:15,600 - INFO -  * Debugger PIN: 136-611-737
+2024-04-03 02:37:22,515 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-03 02:37:22,515 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-03 02:37:22,517 - INFO -  * Restarting with stat
+2024-04-03 02:37:23,619 - WARNING -  * Debugger is active!
+2024-04-03 02:37:23,622 - INFO -  * Debugger PIN: 136-611-737
+2024-04-03 02:37:44,120 - INFO -  * Detected change in 'C:\\Users\\naman\\Documents\\GitHub\\Phishing-detection-based-Associative-Classification-data-mining\\api_server\\logs\\git_logger.py', reloading
+2024-04-03 02:37:44,203 - INFO -  * Restarting with stat
+2024-04-03 02:37:45,345 - WARNING -  * Debugger is active!
+2024-04-03 02:37:45,348 - INFO -  * Debugger PIN: 136-611-737
+2024-04-03 02:37:47,845 - INFO -  * Detected change in 'C:\\Users\\naman\\Documents\\GitHub\\Phishing-detection-based-Associative-Classification-data-mining\\api_server\\logs\\git_logger.py', reloading
+2024-04-03 02:37:47,945 - INFO -  * Restarting with stat
+2024-04-03 02:37:49,105 - WARNING -  * Debugger is active!
+2024-04-03 02:37:49,108 - INFO -  * Debugger PIN: 136-611-737
