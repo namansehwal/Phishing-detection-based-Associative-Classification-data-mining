@@ -333,3 +333,27 @@
 2024-04-03 03:26:50,204 - DEBUG - Closed socket to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:35b8121d-0bf7-458a-a4f4-d37143d8d54c
 2024-04-03 03:26:50,209 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
 2024-04-03 03:26:50,623 - DEBUG - https://api.github.com:443 "GET /repos/namansehwal/Phishing-detection-based-Associative-Classification-data-mining/git/refs/heads/logs HTTP/1.1" 200 None
+2024-04-03 03:26:50,633 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
+2024-04-03 03:26:51,281 - DEBUG - https://api.github.com:443 "POST /repos/namansehwal/Phishing-detection-based-Associative-Classification-data-mining/git/trees HTTP/1.1" 201 3294
+2024-04-03 03:26:51,283 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
+2024-04-03 03:26:51,703 - DEBUG - https://api.github.com:443 "POST /repos/namansehwal/Phishing-detection-based-Associative-Classification-data-mining/git/commits HTTP/1.1" 201 1437
+2024-04-03 03:26:51,705 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
+2024-04-03 03:26:52,330 - DEBUG - https://api.github.com:443 "PATCH /repos/namansehwal/Phishing-detection-based-Associative-Classification-data-mining/git/refs/heads/logs HTTP/1.1" 200 None
+2024-04-03 03:26:52,332 - INFO - 127.0.0.1 - - [03/Apr/2024 03:26:52] "GET /history HTTP/1.1" 200 -
+2024-04-03 03:33:06,313 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-03 03:33:06,313 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-03 03:33:06,314 - INFO -  * Restarting with stat
+2024-04-03 03:33:07,525 - WARNING -  * Debugger is active!
+2024-04-03 03:33:07,528 - INFO -  * Debugger PIN: 136-611-737
+2024-04-03 03:33:24,032 - INFO - 127.0.0.1 - - [03/Apr/2024 03:33:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-04-03 03:33:24,286 - INFO - 127.0.0.1 - - [03/Apr/2024 03:33:24] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-04-03 03:33:24,287 - INFO - 127.0.0.1 - - [03/Apr/2024 03:33:24] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-03 03:33:24,312 - INFO - 127.0.0.1 - - [03/Apr/2024 03:33:24] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-03 03:33:24,328 - INFO - 127.0.0.1 - - [03/Apr/2024 03:33:24] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-03 03:34:35,813 - INFO -  * Detected change in 'C:\\Users\\naman\\Documents\\GitHub\\Phishing-detection-based-Associative-Classification-data-mining\\api_server\\logs\\git_logger.py', reloading
+2024-04-03 03:34:36,010 - INFO -  * Restarting with stat
+2024-04-03 03:34:37,392 - WARNING -  * Debugger is active!
+2024-04-03 03:34:37,396 - INFO -  * Debugger PIN: 136-611-737
+2024-04-03 03:34:48,917 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
+2024-04-03 03:34:49,328 - DEBUG - https://api.github.com:443 "GET /repos/namansehwal/Phishing-detection-based-Associative-Classification-data-mining/git/refs/heads/logs HTTP/1.1" 200 None
