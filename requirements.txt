@@ -1,0 +1,10 @@
+flask
+joblib
+numpy
+cassandra-driver
+python-whois
+bs4
+requests
+dnspython
+scikit-learn
+GitPython
