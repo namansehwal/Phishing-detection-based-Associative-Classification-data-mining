@@ -83,7 +83,10 @@ def commit_to_github(commit_message):
     repo_owner = "namansehwal"
     repo_name = "Phishing-detection-based-Associative-Classification-data-mining"
     branch_name = "logs"
-    github_token = "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"
+    from dotenv import load_dotenv
+
+    load_dotenv()
+    github_token = os.getenv("GITHUB_TOKEN")
 
     files = get_changed_files(log_directory)
 

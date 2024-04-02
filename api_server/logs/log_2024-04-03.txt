@@ -340,3 +340,110 @@
 2024-04-03 03:26:51,705 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
 2024-04-03 03:26:52,330 - DEBUG - https://api.github.com:443 "PATCH /repos/namansehwal/Phishing-detection-based-Associative-Classification-data-mining/git/refs/heads/logs HTTP/1.1" 200 None
 2024-04-03 03:26:52,332 - INFO - 127.0.0.1 - - [03/Apr/2024 03:26:52] "GET /history HTTP/1.1" 200 -
+2024-04-03 03:33:06,313 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-03 03:33:06,313 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-03 03:33:06,314 - INFO -  * Restarting with stat
+2024-04-03 03:33:07,525 - WARNING -  * Debugger is active!
+2024-04-03 03:33:07,528 - INFO -  * Debugger PIN: 136-611-737
+2024-04-03 03:33:24,032 - INFO - 127.0.0.1 - - [03/Apr/2024 03:33:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-04-03 03:33:24,286 - INFO - 127.0.0.1 - - [03/Apr/2024 03:33:24] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-04-03 03:33:24,287 - INFO - 127.0.0.1 - - [03/Apr/2024 03:33:24] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-03 03:33:24,312 - INFO - 127.0.0.1 - - [03/Apr/2024 03:33:24] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-03 03:33:24,328 - INFO - 127.0.0.1 - - [03/Apr/2024 03:33:24] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-03 03:34:35,813 - INFO -  * Detected change in 'C:\\Users\\naman\\Documents\\GitHub\\Phishing-detection-based-Associative-Classification-data-mining\\api_server\\logs\\git_logger.py', reloading
+2024-04-03 03:34:36,010 - INFO -  * Restarting with stat
+2024-04-03 03:34:37,392 - WARNING -  * Debugger is active!
+2024-04-03 03:34:37,396 - INFO -  * Debugger PIN: 136-611-737
+2024-04-03 03:34:48,917 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
+2024-04-03 03:34:49,328 - DEBUG - https://api.github.com:443 "GET /repos/namansehwal/Phishing-detection-based-Associative-Classification-data-mining/git/refs/heads/logs HTTP/1.1" 200 None
+2024-04-03 03:34:49,336 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
+2024-04-03 03:34:49,788 - DEBUG - https://api.github.com:443 "POST /repos/namansehwal/Phishing-detection-based-Associative-Classification-data-mining/git/trees HTTP/1.1" 201 3294
+2024-04-03 03:34:49,794 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
+2024-04-03 03:34:50,272 - DEBUG - https://api.github.com:443 "POST /repos/namansehwal/Phishing-detection-based-Associative-Classification-data-mining/git/commits HTTP/1.1" 201 1437
+2024-04-03 03:34:50,274 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
+2024-04-03 03:34:50,839 - DEBUG - https://api.github.com:443 "PATCH /repos/namansehwal/Phishing-detection-based-Associative-Classification-data-mining/git/refs/heads/logs HTTP/1.1" 200 None
+2024-04-03 03:34:50,841 - INFO - 127.0.0.1 - - [03/Apr/2024 03:34:50] "GET / HTTP/1.1" 200 -
+2024-04-03 03:35:06,101 - DEBUG - Connecting to cluster, contact points: [<SniEndPoint: 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1>, <SniEndPoint: 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:4a9a4582-93bb-4bf1-b281-c49f3c3a544d>, <SniEndPoint: 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:35b8121d-0bf7-458a-a4f4-d37143d8d54c>]; protocol version: 66
+2024-04-03 03:35:06,101 - DEBUG - Validated loop dispatch with <class 'cassandra.io.asyncorereactor._BusyWaitDispatcher'>
+2024-04-03 03:35:06,101 - DEBUG - Host 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1 is now marked up
+2024-04-03 03:35:06,101 - DEBUG - Host 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:4a9a4582-93bb-4bf1-b281-c49f3c3a544d is now marked up
+2024-04-03 03:35:06,101 - DEBUG - Host 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:35b8121d-0bf7-458a-a4f4-d37143d8d54c is now marked up
+2024-04-03 03:35:06,101 - DEBUG - [control connection] Opening new connection to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:06,581 - DEBUG - Starting asyncore event loop
+2024-04-03 03:35:06,600 - DEBUG - Sending initial options message for new connection (2489949335120) to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:07,054 - DEBUG - Defuncting connection (2489949335120) to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (66); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2024-04-03 03:35:07,054 - DEBUG - Closing connection (2489949335120) to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:07,054 - DEBUG - Closed socket to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:07,055 - WARNING - Downgrading core protocol version from 66 to 65 for 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-03 03:35:08,118 - DEBUG - Sending initial options message for new connection (2489949635248) to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:08,366 - DEBUG - Defuncting connection (2489949635248) to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1: <Error from server: code=000a [Protocol error] message="Invalid or unsupported protocol version (65); supported versions are (3/v3, 4/v4, 5/v5-beta)">
+2024-04-03 03:35:08,366 - DEBUG - Closing connection (2489949635248) to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:08,367 - DEBUG - Closed socket to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:08,367 - WARNING - Downgrading core protocol version from 65 to 5 for 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-03 03:35:09,647 - DEBUG - Sending initial options message for new connection (2489949636160) to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:09,888 - ERROR - Closing connection <AsyncoreConnection(2489949636160) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+2024-04-03 03:35:09,888 - DEBUG - Defuncting connection (2489949636160) to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1: <Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset">
+2024-04-03 03:35:09,888 - DEBUG - Closing connection (2489949636160) to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:09,888 - DEBUG - Closed socket to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:09,888 - WARNING - Downgrading core protocol version from 5 to 4 for 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-04-03 03:35:11,160 - DEBUG - Sending initial options message for new connection (2489949335456) to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:11,408 - DEBUG - Received options response on new connection (2489949335456) from 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:11,408 - DEBUG - Sending StartupMessage on <AsyncoreConnection(2489949335456) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1>
+2024-04-03 03:35:11,408 - DEBUG - Sent StartupMessage on <AsyncoreConnection(2489949335456) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1>
+2024-04-03 03:35:11,657 - DEBUG - Got AuthenticateMessage on new connection (2489949335456) from 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1: org.apache.cassandra.auth.PasswordAuthenticator
+2024-04-03 03:35:11,657 - DEBUG - Sending SASL-based auth response on <AsyncoreConnection(2489949335456) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1>
+2024-04-03 03:35:11,916 - DEBUG - Connection <AsyncoreConnection(2489949335456) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1> successfully authenticated
+2024-04-03 03:35:11,917 - DEBUG - [control connection] Established new connection <AsyncoreConnection(2489949335456) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1>, registering watchers and refreshing schema and topology
+2024-04-03 03:35:12,931 - DEBUG - [control connection] Refreshing node list and token map using preloaded results
+2024-04-03 03:35:12,931 - INFO - Using datacenter 'us-east1' for DCAwareRoundRobinPolicy (via host '910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-04-03 03:35:12,931 - DEBUG - [control connection] Finished fetching ring info
+2024-04-03 03:35:12,931 - DEBUG - [control connection] Rebuilding token map due to topology changes
+2024-04-03 03:35:13,711 - DEBUG - Control connection created
+2024-04-03 03:35:13,712 - DEBUG - Initializing connection for host 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:13,712 - DEBUG - Initializing connection for host 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:4a9a4582-93bb-4bf1-b281-c49f3c3a544d
+2024-04-03 03:35:15,449 - DEBUG - Sending initial options message for new connection (2489951264976) to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:4a9a4582-93bb-4bf1-b281-c49f3c3a544d
+2024-04-03 03:35:15,449 - DEBUG - Sending initial options message for new connection (2489949952944) to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:15,687 - DEBUG - Received options response on new connection (2489951264976) from 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:4a9a4582-93bb-4bf1-b281-c49f3c3a544d
+2024-04-03 03:35:15,687 - DEBUG - Sending StartupMessage on <AsyncoreConnection(2489951264976) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:4a9a4582-93bb-4bf1-b281-c49f3c3a544d>
+2024-04-03 03:35:15,687 - DEBUG - Sent StartupMessage on <AsyncoreConnection(2489951264976) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:4a9a4582-93bb-4bf1-b281-c49f3c3a544d>
+2024-04-03 03:35:15,692 - DEBUG - Received options response on new connection (2489949952944) from 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:15,692 - DEBUG - Sending StartupMessage on <AsyncoreConnection(2489949952944) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1>
+2024-04-03 03:35:15,692 - DEBUG - Sent StartupMessage on <AsyncoreConnection(2489949952944) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1>
+2024-04-03 03:35:15,925 - DEBUG - Got AuthenticateMessage on new connection (2489951264976) from 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:4a9a4582-93bb-4bf1-b281-c49f3c3a544d: org.apache.cassandra.auth.PasswordAuthenticator
+2024-04-03 03:35:15,925 - DEBUG - Sending SASL-based auth response on <AsyncoreConnection(2489951264976) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:4a9a4582-93bb-4bf1-b281-c49f3c3a544d>
+2024-04-03 03:35:15,935 - DEBUG - Got AuthenticateMessage on new connection (2489949952944) from 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1: org.apache.cassandra.auth.PasswordAuthenticator
+2024-04-03 03:35:15,935 - DEBUG - Sending SASL-based auth response on <AsyncoreConnection(2489949952944) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1>
+2024-04-03 03:35:16,172 - DEBUG - Connection <AsyncoreConnection(2489951264976) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:4a9a4582-93bb-4bf1-b281-c49f3c3a544d> successfully authenticated
+2024-04-03 03:35:16,172 - DEBUG - Finished initializing connection for host 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:4a9a4582-93bb-4bf1-b281-c49f3c3a544d
+2024-04-03 03:35:16,172 - DEBUG - Added pool for host 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:4a9a4582-93bb-4bf1-b281-c49f3c3a544d to session
+2024-04-03 03:35:16,173 - DEBUG - Initializing connection for host 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:35b8121d-0bf7-458a-a4f4-d37143d8d54c
+2024-04-03 03:35:16,178 - DEBUG - Connection <AsyncoreConnection(2489949952944) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1> successfully authenticated
+2024-04-03 03:35:16,179 - DEBUG - Finished initializing connection for host 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:16,179 - DEBUG - Added pool for host 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1 to session
+2024-04-03 03:35:16,821 - DEBUG - Sending initial options message for new connection (2489949778224) to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:35b8121d-0bf7-458a-a4f4-d37143d8d54c
+2024-04-03 03:35:17,158 - DEBUG - Received options response on new connection (2489949778224) from 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:35b8121d-0bf7-458a-a4f4-d37143d8d54c
+2024-04-03 03:35:17,158 - DEBUG - Sending StartupMessage on <AsyncoreConnection(2489949778224) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:35b8121d-0bf7-458a-a4f4-d37143d8d54c>
+2024-04-03 03:35:17,158 - DEBUG - Sent StartupMessage on <AsyncoreConnection(2489949778224) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:35b8121d-0bf7-458a-a4f4-d37143d8d54c>
+2024-04-03 03:35:17,405 - DEBUG - Got AuthenticateMessage on new connection (2489949778224) from 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:35b8121d-0bf7-458a-a4f4-d37143d8d54c: org.apache.cassandra.auth.PasswordAuthenticator
+2024-04-03 03:35:17,405 - DEBUG - Sending SASL-based auth response on <AsyncoreConnection(2489949778224) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:35b8121d-0bf7-458a-a4f4-d37143d8d54c>
+2024-04-03 03:35:17,661 - DEBUG - Connection <AsyncoreConnection(2489949778224) 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:35b8121d-0bf7-458a-a4f4-d37143d8d54c> successfully authenticated
+2024-04-03 03:35:17,661 - DEBUG - Finished initializing connection for host 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:35b8121d-0bf7-458a-a4f4-d37143d8d54c
+2024-04-03 03:35:17,661 - DEBUG - Added pool for host 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:35b8121d-0bf7-458a-a4f4-d37143d8d54c to session
+2024-04-03 03:35:17,662 - DEBUG - Not starting MonitorReporter thread for Insights; not supported by server version 4.0.0.6816 on ControlConnection host 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:17,662 - DEBUG - Started Session with client_id ddd4de6d-5ea8-45b6-8a95-ea86feaf53c2 and session_id 26415b4e-c265-4540-bb9f-f03d3ade4274
+2024-04-03 03:35:18,967 - DEBUG - Shutting down Cluster Scheduler
+2024-04-03 03:35:18,967 - DEBUG - Shutting down control connection
+2024-04-03 03:35:18,967 - DEBUG - Closing connection (2489949335456) to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:18,967 - DEBUG - Closed socket to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:18,968 - DEBUG - Closing connection (2489951264976) to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:4a9a4582-93bb-4bf1-b281-c49f3c3a544d
+2024-04-03 03:35:18,968 - DEBUG - Closed socket to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:4a9a4582-93bb-4bf1-b281-c49f3c3a544d
+2024-04-03 03:35:18,968 - DEBUG - Closing connection (2489949952944) to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:18,968 - DEBUG - Closed socket to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:acb3b6dc-cf73-4ff9-af4d-803e55f28ec1
+2024-04-03 03:35:18,968 - DEBUG - Closing connection (2489949778224) to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:35b8121d-0bf7-458a-a4f4-d37143d8d54c
+2024-04-03 03:35:18,968 - DEBUG - Closed socket to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:35b8121d-0bf7-458a-a4f4-d37143d8d54c
+2024-04-03 03:35:18,973 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
+2024-04-03 03:35:19,390 - DEBUG - https://api.github.com:443 "GET /repos/namansehwal/Phishing-detection-based-Associative-Classification-data-mining/git/refs/heads/logs HTTP/1.1" 200 None
+2024-04-03 03:35:19,398 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
+2024-04-03 03:35:19,873 - DEBUG - https://api.github.com:443 "POST /repos/namansehwal/Phishing-detection-based-Associative-Classification-data-mining/git/trees HTTP/1.1" 201 3294
+2024-04-03 03:35:19,876 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
