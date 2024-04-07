@@ -444,3 +444,10 @@
 2024-04-03 03:35:18,968 - DEBUG - Closed socket to 910ac3f9-61e7-46c9-84eb-08ea4df5d58a-us-east1.db.astra.datastax.com:29042:35b8121d-0bf7-458a-a4f4-d37143d8d54c
 2024-04-03 03:35:18,973 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
 2024-04-03 03:35:19,390 - DEBUG - https://api.github.com:443 "GET /repos/namansehwal/Phishing-detection-based-Associative-Classification-data-mining/git/refs/heads/logs HTTP/1.1" 200 None
+2024-04-03 03:35:19,398 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
+2024-04-03 03:35:19,873 - DEBUG - https://api.github.com:443 "POST /repos/namansehwal/Phishing-detection-based-Associative-Classification-data-mining/git/trees HTTP/1.1" 201 3294
+2024-04-03 03:35:19,876 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
+2024-04-03 03:35:20,335 - DEBUG - https://api.github.com:443 "POST /repos/namansehwal/Phishing-detection-based-Associative-Classification-data-mining/git/commits HTTP/1.1" 201 1437
+2024-04-03 03:35:20,337 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
+2024-04-03 03:35:20,911 - DEBUG - https://api.github.com:443 "PATCH /repos/namansehwal/Phishing-detection-based-Associative-Classification-data-mining/git/refs/heads/logs HTTP/1.1" 200 None
+2024-04-03 03:35:20,914 - INFO - 127.0.0.1 - - [03/Apr/2024 03:35:20] "GET /history HTTP/1.1" 200 -
