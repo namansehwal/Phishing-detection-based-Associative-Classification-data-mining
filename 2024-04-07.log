@@ -1,0 +1,33 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 711-014-298
+INFO:werkzeug: * Detected change in 'C:\\Users\\naman\\Documents\\GitHub\\Phishing-detection-deployment\\logs\\git_logger.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 711-014-298
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 23:05:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\naman\\Documents\\GitHub\\Phishing-detection-deployment\\logs\\git_logger.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 711-014-298
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 23:06:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 23:06:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 23:06:57] "GET / HTTP/1.1" 200 -
+DEBUG:appServiceAppLogs:Waiting for the logs flag to be set
+INFO:appsvc_profiler.installer:Code Profiler Installer is starting up
+INFO:appsvc_profiler.installer:Cleaning up any existing status file which indicated signal handlers initialized status
+INFO:appsvc_profiler.installer:Attempting to delete the signal_handler status file for instance id f52c0e4b83bc13ae882940b4598a89f27283af9f92e53cb204ba2f4e3786c3b1
+INFO:appsvc_profiler.installer:successfully deleted the status file
+DEBUG:appsvc_profiler.installer:APPSETTING_WEBSITE_ENABLE_DEFAULT_CODE_PROFILER : None
+INFO:appsvc_profiler.installer:Attempting to install the default code profiler.
+DEBUG:appsvc_profiler.installer:viztracer would save traces to /tmp/f52c0e_profiler_trace.json
+INFO:appsvc_profiler.installer:Successfully installed code profiler.
+INFO:appsvc_profiler.installer:Signal Handlers SIGUSR for needed code-profiler have been initialized for gunicorn process on instance f52c0e4b83bc13ae882940b4598a89f27283af9f92e53cb204ba2f4e3786c3b1
+DEBUG:appsvc_profiler.installer:Code Profiler Installer is exiting as installation is completed
